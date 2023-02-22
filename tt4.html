@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Border Styles for Even and Odd Images</title>
+	<style>
+		img {
+			display: block;
+			margin: 20px auto;
+			border-radius: 5px;
+			box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+		}
+		.even {
+			border: 3px solid #43ff14;
+		}
+		.odd {
+			border: 2px dashed #1100ff;
+		}
+	</style>
+</head>
+<body>
+	<img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" alt="Image 1"><hr>
+	<img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/flowers-276014__340.jpg" alt="image2"><hr>
+	<img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" alt="Image 4"><hr>
+	<img src="https://images.unsplash.com/photo-1495571758719-6ec1e876d6ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXRodW1ibmFpbHx8ODc5ODgzMnx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=420&q=60" alt="Image 5"><hr>
+	<img src="https://assets.hongkiat.com/uploads/nature-photography/autumn-poolside.jpg" alt="Image 6"><hr>
+
+	<script>
+		const images = document.getElementsByTagName('img');
+		for (let i = 0; i < images.length; i++) {
+			if (i % 2 === 0) {
+				images[i].classList.add('even');
+			} else {
+				images[i].classList.add('odd');
+			}
+		}
+	</script>
+</body>
+</html>

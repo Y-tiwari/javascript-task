@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Countries List</title>
+	<style>
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			margin-bottom: 5px;
+			padding: 5px;
+			background-color: #eee;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<ul id="countries-list"></ul>
+
+	<script>
+		const countries = [
+			"India",
+			"United States",
+			"Russia",
+			"China",
+			"Germany",
+			"United Kingdom",
+			"Japan",
+			"France",
+			"Canada",
+			"South Korea"
+		];
+
+		const countriesList = document.getElementById("countries-list");
+
+		for (let i = 0; i < countries.length; i++) {
+			const country = countries[i];
+			const li = document.createElement("li");
+			li.textContent = country;
+			if (i % 2 === 0) {
+				li.style.backgroundColor = "green";
+			} else {
+				li.style.backgroundColor = "yellow";
+			}
+			if (isPrime(i+1)) {
+				li.style.backgroundColor = "red";
+			}
+			countriesList.appendChild(li);
+		}
+
+		function isPrime(num) {
+			if (num <= 1) {
+				return false;
+			}
+			for (let i = 2; i <= Math.sqrt(num); i++) {
+				if (num % i === 0) {
+					return false;
+				}
+			}
+			return true;
+		}
+	</script>
+</body>
+</html>

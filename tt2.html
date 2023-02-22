@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Replace Punctuation with Emojis on Click</title>
+	<link rel="stylesheet" href="tt2.css">
+</head>
+<body>
+	<h2 id="click"><b><u><marquee behavior="scroll" direction="right" scrollamount="12" width="100%" direction="right" height="100px" scrolingamount="10">CONVERT TEXT TO EMOJIS ?='🤔', !='😲', .='🙂'</marquee></u></b></h2>
+	<p id="paragraph">Why are you so late? What happened?! Don't tell me you missed the train again.
+        This is someA computer is an electronic device that was discovered by Charles Babbage.?<br> He is known as the father of computers.!<br> There are various parts to a computer.!<br> The four major parts of a computer are the mouse, keyboard, monitor and CPU.!<br>
+        A computer is one of the best man-made creations that has been developed to help people in various sectors.<br> It has become such an important part of our lives that we find computers everywhere we go. Starting from our school life till our old age, we have many uses for computers.? <br>We have become so much dependent on computers that we are using computers for almost everything we do.? It is a device that can store an enormous amount of data in it.! We are so much dependent on computers that we do not want to put any pressure on ourselves.?<br> We blindly store all our data in a computer with a safety passcode. A computer takes up the responsibility and processes the output in no time, hence making our life easier.!<br> It collects the data, processes it and then provides the final result to us within a very short time.? People in this day and age have become so reliant on computers that they cannot imagine life without them. Computers are significant because of their widespread use, productivity, and openness. Computers are the most needed innovation due to their incredible benefits.<br> Computers are used in every field, like the education sector, hospitals, hotels, etc. If you go for a CT Scan, X-ray, or ECG, you will need a computer to check your body. In case you want to submit a project, you will need a computer. It has become a part of our lifestyle.!
+       <br>
+        The computer is a remarkable piece of science that man has created to help humanity.! Computers are in charge of today’s reality, and they have unquestionably altered people’s lifestyles and the condition of developing countries.<br>
+        In the 21st century, it is impossible to imagine a life without a computer and internet connection.? The invention of computers has brought a lot of changes in people’s lives and has helped in fulfilling people’s dreams.? A computer is used in various organisations, schools, institutions, offices, etc.! It can be used to store important information with high protection and can also be used to send and receive messages, make calculations, develop software, send and receive emails, etc.? The major parts of a computer are the mouse, keyboard, monitor, and CPU, but these gadgets have been improvised with a lot of modifications.!<br>
+
+        Nowadays, we have become very dependent on technology; therefore, it is difficult to imagine our lives without a computer. To learn any professional course, you must be well-versed in computer usage.? Whether a school student or an employee, you must at least know the basics of computers. Along with the increasing usage of computers, they have been updated in many ways, like making it lighter to carry in a bag, making processors faster, etc.? With the increasing usage and demands of people, computers have been developed and have made life easier. Starting from simple calculations to weather forecasting, computers have become a part of our lives! <span class="bold">the computer</span> in a paragraph.
+    </p>
+	<button id="replace-button">CLICK ME.</button>
+
+	<script>
+		const button = document.getElementById('replace-button');
+		const paragraph = document.getElementById('paragraph');
+		const click = document.getElementById('click')
+		button.addEventListener('click', () => {
+			const replaced = paragraph.textContent.replace(/\?/g, '🤔').replace(/!/g, '😲').replace(/\./g,'🙂');
+			paragraph.textContent = replaced;
+		});
+	</script>
+</body>
+</html>
+
+	

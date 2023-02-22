@@ -1,0 +1,21 @@
+#replace-button {
+    padding-bottom: 0%;
+    height: 38px;
+    width: 89px;
+    background-color: aqua;
+    transition: .1s ease;
+    transition: .5s ease;
+}
+#replace-button:hover {
+    box-shadow:
+    1px 1px #f10505,
+   2px 2px #fff12a,
+   3px 3px #07da23,
+   4px 4px #022917,
+   5px 5px #1ecffc,
+   6px 6px #3902ff;
+   -webkit-transform: translateX(-3px);
+   transform: translateX(-3px);
+   transition: .5s ease;
+
+}
